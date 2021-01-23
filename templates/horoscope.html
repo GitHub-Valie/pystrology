@@ -1,0 +1,36 @@
+<html>
+
+    <head>
+
+        <title>
+            {{ sign }} horoscope
+        </title>
+
+        <link 
+        rel="stylesheet" 
+        href="https://bootswatch.com/4/sketchy/bootstrap.css" 
+        crossorigin="anonymous">
+        
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="jumbotron">
+                <h1 class="display-3">{{ sign }}</h1>
+                <p class="lead">{{ description }}</p>
+                <hr class="my-4">
+                <p>Color: {{ color }}</p>
+                <p>Compatibility: {{ compatibility }}</p>
+                <p>Date range: {{ date_range }}</p>
+                <p>Lucky number: {{ lucky_number }}</p>
+                <p>Lucky time: {{ lucky_time }}</p>
+                <p>Mood: {{ mood }}</p>
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
