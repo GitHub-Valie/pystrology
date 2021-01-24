@@ -7,27 +7,34 @@
     </head>
     <body>
 
+        &nbsp;
+
         <div class="container">
 
-            <div class="form-group">
-                <label 
-                class="col-form-label" 
-                for="inputDefault">Pick your zodiac sign
-                </label>
-            </div>
+            <div class="jumbotron">
 
-            <div class="form-group" margin="20px">
-                <form action="/horoscope" method="post">
-                    <select 
-                    id="zodiac_sign" 
-                    name= "zodiac_sign" 
-                    class="custom-select">
-                    {% for zodiac_sign in zodiac_signs %}
-                        <option>{{ zodiac_sign }}</option>
-                    {% endfor %}
-                    </select>
-                    <button type="submit" name="sign" class="btn btn-primary">Submit</button>
-                </form>
+                <h1 class="display-3">Welcome to your daily horoscope!</h1>
+            
+                <div>
+                    <h3>Pick your zodiac sign</h3>
+                </div>
+
+                <div class="form-group">
+                    <form action="/horoscope" method="post">
+                        <select 
+                        id="zodiac_sign" 
+                        name= "zodiac_sign" 
+                        class="custom-select">
+                        {% for zodiac_sign in zodiac_signs %}
+                            <option>{{ zodiac_sign }}</option>
+                        {% endfor %}
+                        </select>
+                        <div class="container">
+                            <button type="submit" name="sign" class="btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+
             </div>
 
         </div>

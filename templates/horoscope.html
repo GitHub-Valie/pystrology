@@ -3,7 +3,7 @@
     <head>
 
         <title>
-            {{ sign }} horoscope (Date range: {{ date_range }})
+            {{ sign }} horoscope
         </title>
 
         <link 
@@ -15,17 +15,22 @@
 
     <body>
 
+        &nbsp;
+
         <div class="container">
+
+            <h1>Your daily horoscope ...</h1>
 
             <div class="jumbotron">
                 <h1 class="display-3">{{ sign }}</h1>
+                <h3 class="display-6">Date range: {{ date_range }}</h3>
                 <p class="lead">{{ description }}</p>
                 <hr class="my-4">
-                <p>Color: {{ color }}</p>
-                <p>Compatibility: {{ compatibility }}</p>
-                <p>Lucky number: {{ lucky_number }}</p>
-                <p>Lucky time: {{ lucky_time }}</p>
-                <p>Mood: {{ mood }}</p>
+                <p>Your daily color: {{ color }}</p>
+                <p>You will be more compatible with: {{ compatibility }}</p>
+                <p>Your lucky number:: {{ lucky_number }}</p>
+                <p>Your lucky time: {{ lucky_time }}</p>
+                <p>Your mood: {{ mood }}</p>
             </div>
 
         </div>
